@@ -1,7 +1,8 @@
 """Download pinned, licensed upstream robot models; keep originals intact.
 
-Run ``python -m lecture6_sim.download_assets`` once during setup. Downloads
-are excluded from Git; subsequent experiments use the local copies offline.
+The repository includes originals, prepared URDFs, licenses and a manifest.
+Run ``python -m lecture6_sim.download_assets`` to refresh the pinned copies;
+ordinary experiments load the bundled files without downloading them.
 """
 from __future__ import annotations
 

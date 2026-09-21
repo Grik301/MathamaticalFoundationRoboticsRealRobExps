@@ -4,7 +4,7 @@ Probability, stochastic dynamics, and SLAM experiments using PyBullet models of 
 
 Robots move through rotor forces or wheel motors in the physics simulator. These are simulations of real robot designs, not physical-hardware experiments or calibrated digital twins.
 
-This repository contains source code, configuration, tests, and documentation. Robot models are downloaded during setup; equation artwork and experiment outputs are generated locally. PDFs, datasets, GIFs, videos, caches, and environments are excluded.
+This repository contains source code, configuration, tests, documentation, and the Crazyflie and Husky robot assets: original and prepared URDFs, visual meshes, upstream licenses, and a pinned provenance manifest. Equation artwork and experiment outputs are generated locally. PDFs, datasets, GIFs, videos, caches, and environments are excluded.
 
 ## Installation
 
@@ -18,15 +18,18 @@ python3.13 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 
-# Download pinned upstream URDFs, meshes, and their licenses.
-python -m lecture6_sim.download_assets
-
 # Generate equation artwork from the project's LaTeX source.
 npm ci --prefix .mathjax
 python -m lecture6_sim.typeset
 ```
 
-Setup needs internet access. Subsequent experiments use the downloaded models and generated artwork locally. See [robot models and assumptions](docs/ROBOT_MODELS.md) for provenance and required model preparation.
+Dependency installation needs internet access. Robot models are bundled in [`lecture6_sim/assets/`](lecture6_sim/assets/), ready to use; subsequent experiments use these models and the generated artwork locally. See [robot models and assumptions](docs/ROBOT_MODELS.md) for provenance and preparation details.
+
+Optionally refresh the bundled robot files from their pinned upstream sources:
+
+```bash
+python -m lecture6_sim.download_assets
+```
 
 ## Run experiments
 
@@ -103,7 +106,7 @@ python -m lecture6_sim.refresh_gifs --force
 python -m lecture6_sim.verify
 ```
 
-Presentation refresh requires the existing GIFs and logs. It verifies that camera pixels, playback durations, and raw CSV/NPZ files are preserved. Generated model assets, equation images, and results remain outside version control.
+Presentation refresh requires the existing GIFs and logs. It verifies that camera pixels, playback durations, and raw CSV/NPZ files are preserved. Generated equation images and experiment results remain outside version control.
 
 ## Gymnasium and Gym
 
@@ -133,4 +136,4 @@ Tests cover numerical invariants, physical actuation, Gym compatibility, and joi
 
 ## License
 
-Project source code is licensed under the [MIT License](LICENSE), copyright 2026 Grik Tadevosyan (Grik301). Downloaded robot descriptions and meshes retain their upstream licenses; the downloader preserves their notices. See [robot model provenance](docs/ROBOT_MODELS.md). The lecture PDF and generated recordings are not included in this repository.
+Project source code is licensed under the [MIT License](LICENSE), copyright 2026 Grik Tadevosyan (Grik301). Bundled robot descriptions and meshes retain their upstream licenses: [Crazyflie MIT notice](lecture6_sim/assets/upstream/crazyflie/LICENSE), [Husky Clearpath notice in its URDF](lecture6_sim/assets/upstream/husky/husky.urdf), and [Bullet zlib notice](lecture6_sim/assets/upstream/husky/BULLET_LICENSE.txt). See [robot model provenance](docs/ROBOT_MODELS.md). The lecture PDF and generated recordings are not included in this repository.

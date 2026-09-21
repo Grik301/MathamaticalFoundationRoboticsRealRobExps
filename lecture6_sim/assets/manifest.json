@@ -1,0 +1,74 @@
+{
+  "repositories": {
+    "crazyflie": {
+      "repository": "https://github.com/learnsyslab/gym-pybullet-drones",
+      "commit": "7ebad1ecabd28a7000add2d05f888aa2e837c2cc"
+    },
+    "husky": {
+      "repository": "https://github.com/bulletphysics/bullet3",
+      "commit": "63c4d67e337017f9d8b298c900e9aabdb69296e7"
+    }
+  },
+  "files": [
+    {
+      "path": "upstream/crazyflie/cf2x.urdf",
+      "url": "https://raw.githubusercontent.com/learnsyslab/gym-pybullet-drones/7ebad1ecabd28a7000add2d05f888aa2e837c2cc/gym_pybullet_drones/assets/cf2x.urdf",
+      "sha256": "81494018056df2995351da62b9365d2ef4e1512112feaf73e88f9203e20c884b",
+      "bytes": 2836
+    },
+    {
+      "path": "upstream/crazyflie/cf2.dae",
+      "url": "https://raw.githubusercontent.com/learnsyslab/gym-pybullet-drones/7ebad1ecabd28a7000add2d05f888aa2e837c2cc/gym_pybullet_drones/assets/cf2.dae",
+      "sha256": "8db98d6393bbf672f01a8d3af6ff5ac42b9e85f6ee3e3e2d2c53801e823b3a35",
+      "bytes": 529734
+    },
+    {
+      "path": "upstream/crazyflie/LICENSE",
+      "url": "https://raw.githubusercontent.com/learnsyslab/gym-pybullet-drones/7ebad1ecabd28a7000add2d05f888aa2e837c2cc/LICENSE",
+      "sha256": "d49cdc3020dfe0615515277ff96e2f5ca471750248a7505c9bb288be84af4591",
+      "bytes": 1072
+    },
+    {
+      "path": "upstream/husky/husky.urdf",
+      "url": "https://raw.githubusercontent.com/bulletphysics/bullet3/63c4d67e337017f9d8b298c900e9aabdb69296e7/examples/pybullet/gym/pybullet_data/husky/husky.urdf",
+      "sha256": "cd6c2e5d2b5282e33993b635f142f8252320efa8b5ca818ada91b8f7f2899314",
+      "bytes": 12605
+    },
+    {
+      "path": "upstream/husky/meshes/base_link.stl",
+      "url": "https://raw.githubusercontent.com/bulletphysics/bullet3/63c4d67e337017f9d8b298c900e9aabdb69296e7/examples/pybullet/gym/pybullet_data/husky/meshes/base_link.stl",
+      "sha256": "a84f96ae2b2f87235e0352c251ed6620f041b00a0aa34b6109f7c94c0235d88b",
+      "bytes": 60484
+    },
+    {
+      "path": "upstream/husky/meshes/wheel.stl",
+      "url": "https://raw.githubusercontent.com/bulletphysics/bullet3/63c4d67e337017f9d8b298c900e9aabdb69296e7/examples/pybullet/gym/pybullet_data/husky/meshes/wheel.stl",
+      "sha256": "18efda569e7fdfecb91ff3caa7389c99247b8c422fc8ae5f210faad61b9e05ee",
+      "bytes": 354584
+    },
+    {
+      "path": "upstream/husky/meshes/top_plate.stl",
+      "url": "https://raw.githubusercontent.com/bulletphysics/bullet3/63c4d67e337017f9d8b298c900e9aabdb69296e7/examples/pybullet/gym/pybullet_data/husky/meshes/top_plate.stl",
+      "sha256": "51bc8aac29961b3f4e7c1ede69e8ae8ce988d175c939383c5b40681fdcaef39f",
+      "bytes": 153984
+    },
+    {
+      "path": "upstream/husky/meshes/user_rail.stl",
+      "url": "https://raw.githubusercontent.com/bulletphysics/bullet3/63c4d67e337017f9d8b298c900e9aabdb69296e7/examples/pybullet/gym/pybullet_data/husky/meshes/user_rail.stl",
+      "sha256": "25b852d02d50590570020f5a71f9ff07834f086016a607a121f00891f86bd1b0",
+      "bytes": 115184
+    },
+    {
+      "path": "upstream/husky/meshes/bumper.stl",
+      "url": "https://raw.githubusercontent.com/bulletphysics/bullet3/63c4d67e337017f9d8b298c900e9aabdb69296e7/examples/pybullet/gym/pybullet_data/husky/meshes/bumper.stl",
+      "sha256": "45ba49975d9097b2279aafe81e7b9fd267feba6d684e127d6b5841cc3a0490d5",
+      "bytes": 23934
+    },
+    {
+      "path": "upstream/husky/BULLET_LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/bulletphysics/bullet3/63c4d67e337017f9d8b298c900e9aabdb69296e7/LICENSE.txt",
+      "sha256": "885cd516a8420acb7c3e0b1a7119913b686495001ae564e3229740460e8cff59",
+      "bytes": 1022
+    }
+  ]
+}

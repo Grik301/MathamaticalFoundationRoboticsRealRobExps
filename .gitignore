@@ -15,7 +15,7 @@ build/
 dist/
 *.egg-info/
 
-# Downloads and generated equation artwork
+# Unbundled assets and generated equation artwork
 assets/
 math_assets/
 
@@ -58,6 +58,12 @@ logs/
 *.zip
 *.tar*
 *.gz
+
+# Bundle the pinned robot descriptions, meshes, licenses and manifest.
+!/lecture6_sim/assets/
+!/lecture6_sim/assets/**/*.urdf
+!/lecture6_sim/assets/**/*.stl
+!/lecture6_sim/assets/**/*.dae
 
 # Credentials and machine/editor state
 .env
